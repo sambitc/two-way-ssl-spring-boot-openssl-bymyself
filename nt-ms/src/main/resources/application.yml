@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: nt-ms
+---
+server:
+  port: 9002
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: classpath:keystore.jks
+    key-store-password: password
+    key-alias: server
+    key-store-type: JKS
+    key-store-provider: SUN
+    trust-store: classpath:truststore.jks
+    trust-store-type: JKS
+    trust-store-password: password
+    trust-store-provider: SUN
+    
+    
